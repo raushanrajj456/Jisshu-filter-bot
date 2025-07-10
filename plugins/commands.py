@@ -159,17 +159,11 @@ async def start(client: Client, message):
                 )
             ],
             [
-                InlineKeyboardButton("• ᴅɪꜱᴀʙʟᴇ ᴀᴅꜱ •", callback_data="jisshupremium"),
-                InlineKeyboardButton("• ꜱᴘᴇᴄɪᴀʟ •", callback_data="special"),
+                InlineKeyboardButton("SUPPORT GROUP", url=f"https://t.me/+D02ZgS0FHfFhMmQ9"),
+                InlineKeyboardButton("MOVIE GROUP", url="https://t.me/RSD_REQUEST_GROUP"),
             ],
             [
-                InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help"),
-                InlineKeyboardButton("• ᴀʙᴏᴜᴛ •", callback_data="about"),
-            ],
-            [
-                InlineKeyboardButton(
-                    "• ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ •", callback_data="earn"
-                )
+                InlineKeyboardButton("JOIN UPDATE CHANNEL", url="https://t.me/+NMyQt906dYI1NzM1"),
             ],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -188,7 +182,7 @@ async def start(client: Client, message):
         )
         return
     if len(message.command) == 2 and message.command[1] in [
-        "subscribe",
+     "subscribe",
         "error",
         "okay",
         "help",
