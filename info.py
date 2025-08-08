@@ -50,7 +50,7 @@ DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
 
 # Files index database url
 FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://raushanrajj456:raushanrajj456@cluster0.bvovgl7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-COLLECTION_NAME = environ.get("COLLECTION_NAME", "jisshu")
+COLLECTION_NAME = environ.get("COLLECTION_NAME", "Rsd")
 
 # Other Channel's
 SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002703096290"))
@@ -173,7 +173,7 @@ if "DYNO" in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "https://jisshu-filter-bot-ut6n.onrender.com")
+URL = environ.get("FQDN", "")
 
 # Commands
 admin_cmds = [
