@@ -29,7 +29,7 @@ ADMINS = [
 OWNER_USERNAME = environ.get(
     "OWNER_USERNAME", "Raushan_Rsd"
 )  # without @ or https://t.me/
-USERNAME = environ.get("USERNAME", "#Raushan_Rsd")  # ADMIN USERNAME
+USERNAME = environ.get("USERNAME", "Raushan_Rsd")  # ADMIN USERNAME
 
 # Database Channel
 CHANNELS = [
@@ -38,11 +38,11 @@ CHANNELS = [
 ]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "0"))
-AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "0"))
+AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1002774674128"))
+AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "-1002774674128"))
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002606709611"))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "0"))
-LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "0"))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002606709611"))
+LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1002606709611"))
 
 # MongoDB
 DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://raushanyt:raushanyt@cluster0.8zkxzpa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -54,7 +54,7 @@ COLLECTION_NAME = environ.get("COLLECTION_NAME", "Rsd")
 
 # Other Channel's
 SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002703096290"))
-DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "0"))
+DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "-1002606709611"))
 request_channel = environ.get("REQUEST_CHANNEL", "-1002570712094")
 REQUEST_CHANNEL = (
     int(request_channel)
