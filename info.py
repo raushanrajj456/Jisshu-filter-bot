@@ -120,8 +120,7 @@ QUALITIES = [
     "2K",
     "2160p",
     "4k",
-    "5K",
-    "8K",
+    
 ]
 YEARS = [f"{i}" for i in range(2025, 2002, -1)]
 SEASONS = [f"season {i}" for i in range(1, 23)]
@@ -149,16 +148,16 @@ FILE_AUTO_DEL_TIMER = int(environ.get("FILE_AUTO_DEL_TIMER", "600"))
 AUTO_FILTER = is_enabled("AUTO_FILTER", True)
 IS_PM_SEARCH = is_enabled("IS_PM_SEARCH", False)
 IS_SEND_MOVIE_UPDATE = is_enabled(
-    "IS_SEND_MOVIE_UPDATE", False
+    "IS_SEND_MOVIE_UPDATE", True
 )  # Don't Change It ( If You Want To Turn It On Then Turn It On By Commands) We Suggest You To Make It Turn Off If You Are Indexing Files First Time.
 MAX_BTN = int(environ.get("MAX_BTN", "8"))
 AUTO_DELETE = is_enabled("AUTO_DELETE", True)
-DELETE_TIME = int(environ.get("DELETE_TIME", 1200))
+DELETE_TIME = int(environ.get("DELETE_TIME", 300))
 IMDB = is_enabled("IMDB", True)
 FILE_CAPTION = environ.get("FILE_CAPTION", f"{script.FILE_CAPTION}")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
-PROTECT_CONTENT = is_enabled("PROTECT_CONTENT", False)
+PROTECT_CONTENT = is_enabled("PROTECT_CONTENT", True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 LINK_MODE = is_enabled("LINK_MODE", True)
 TMDB_API_KEY = environ.get("TMDB_API_KEY", "")
