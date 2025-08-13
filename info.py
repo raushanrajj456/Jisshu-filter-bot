@@ -38,11 +38,11 @@ CHANNELS = [
 ]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1002774674128"))
-AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "-1002774674128"))
+AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1002844690531"))
+AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "-1002500431814 -1002774674128"))
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002606709611"))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002606709611"))
-LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1002606709611"))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", ""))
+LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", ""))
 
 # MongoDB
 DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://raushanyt:raushanyt@cluster0.8zkxzpa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -153,7 +153,7 @@ IS_SEND_MOVIE_UPDATE = is_enabled(
 MAX_BTN = int(environ.get("MAX_BTN", "8"))
 AUTO_DELETE = is_enabled("AUTO_DELETE", True)
 DELETE_TIME = int(environ.get("DELETE_TIME", 300))
-IMDB = is_enabled("IMDB", True)
+IMDB = is_enabled("IMDB", False)
 FILE_CAPTION = environ.get("FILE_CAPTION", f"{script.FILE_CAPTION}")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
